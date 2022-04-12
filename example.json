@@ -1,0 +1,51 @@
+{
+  "_id": "c-05",
+  "_parentId": "b-05",
+  "_type": "component",
+  "_component": "avatar",
+  "_classes": "",
+  "_layout": "full",
+  "title": "Avatar component",
+  "displayTitle": "Avatar component",
+  "body": "This component you're reading is an avatar component.",
+  "instruction": "",
+  "_graphic": {
+    "alt": "",
+    "src": "assets/avatar-spritesheet.png"
+  },
+  "_splitCSSclasses": false,
+  "_items": [
+    {
+      "title": "Customize the avatar feature 1",
+      "_classes": "",
+      "_choices": [
+        {
+          "value": "1",
+          "text": "Aspect 1",
+          "description": "1. Aspect 1 description"
+        },
+        {
+          "value": "2",
+          "text": "Aspect 2",
+          "description": "1. Aspect 2 description"
+        }
+      ]
+    },
+    {
+      "title": "Customize the avatar feature 2",
+      "_classes": "",
+      "_choices": [
+        {
+          "value": "1",
+          "text": "Aspect 1",
+          "description": "2. Aspect 1 description"
+        },
+        {
+          "value": "2",
+          "text": "Aspect 2",
+          "description": "2. Aspect 2 description"
+        }
+      ]
+    }
+  ]
+}

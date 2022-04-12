@@ -1,0 +1,38 @@
+.avatar {
+  @media (min-width: @device-width-medium) {
+    &__widget {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__items,
+    &__preview {
+      width: 50%;
+    }
+  }
+  &__preview-inner {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  &__item {
+    text-align: center;
+    padding: 1rem;
+  }
+  &__item-title {
+    margin-bottom: 0.5rem;
+  }
+  &__item-choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &-choice {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"id": "http://jsonschema.net",
+	"$ref": "http://localhost/plugins/content/component/model.schema",
+	"globals": {
+		"ariaRegion": {
+			"type": "string",
+			"required": true,
+			"default": "",
+			"inputType": "Text",
+			"validators": [],
+			"translatable": true
+		}
+	},
+	"properties": {
+		"_supportedLayout": {
+			"type": "string",
+			"required": true,
+			"enum": ["full-width", "half-width", "both"],
+			"default": "both",
+			"editorOnly": true
+		},
+		"instruction": {
+			"type": "string",
+			"required": false,
+			"default": "",
+			"inputType": "Text",
+			"validators": [],
+			"help": "This is the instruction text",
+			"translatable": true
+		},
+		"_splitCSSclasses": {
+			"type": "boolean",
+			"required": false,
+			"title": "Split CSS classes?",
+			"inputType": "Checkbox",
+			"validators": [],
+			"help": "",
+			"translatable": false
+		},
+		"_graphic": {
+			"type": "object",
+			"required": false,
+			"title": "Graphic",
+			"properties": {
+				"src": {
+					"type": "string",
+					"required": false,
+					"default": "",
+					"inputType": "Asset:image",
+					"validators": [],
+					"help": ""
+				}
+			}
+		},
+		"_items": {
+			"type": "array",
+			"required": true,
+			"title": "Items",
+			"items": {
+				"type": "object",
+				"required": true,
+				"properties": {
+					"title": {
+						"type": "string",
+						"required": false,
+						"inputType": "Text",
+						"title": "Item title",
+						"default": "",
+						"validators": [],
+						"help": "This is the item text",
+						"translatable": true
+					},
+					"_choices": {
+						"type": "array",
+						"required": true,
+						"title": "Choices",
+						"items": {
+							"type": "object",
+							"required": true,
+							"properties": {
+								"value": {
+									"type": "string",
+									"required": false,
+									"inputType": "Text",
+									"title": "Choice value",
+									"default": "",
+									"validators": [],
+									"help": "This is the choice value",
+									"translatable": true
+								},
+								"text": {
+									"type": "string",
+									"required": false,
+									"inputType": "Text",
+									"title": "Choice text",
+									"default": "",
+									"validators": [],
+									"help": "This is the choice text",
+									"translatable": true
+								},
+								"description": {
+									"type": "string",
+									"required": false,
+									"inputType": "TextArea",
+									"title": "Choice description",
+									"default": "",
+									"validators": [],
+									"help": "This is the choice description",
+									"translatable": true
+								}
+							}
+						}
+					},
+					"_classes": {
+						"type": "string",
+						"required": false,
+						"default": "",
+						"title": "Classes",
+						"inputType": "Text",
+						"validators": [],
+						"help": "Classes that are applied to the item"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,111 @@
+{
+  "$anchor": "avatar-component",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$merge": {
+    "source": {
+      "$ref": "component"
+    },
+    "with": {
+      "properties": {
+        "_supportedLayout": {
+          "type": "string",
+          "title": "Supported layout",
+          "default": "both",
+          "enum": ["full-width", "half-width", "both"],
+          "_adapt": {
+            "editorOnly": true
+          }
+        },
+        "instruction": {
+          "type": "string",
+          "title": "Instruction",
+          "default": "",
+          "_adapt": {
+            "translatable": true
+          }
+        },
+        "_splitCSSclasses": {
+          "type": "boolean",
+          "title": "Split CSS classes?",
+          "description": ""
+        },
+        "_graphic": {
+          "type": "object",
+          "title": "Graphic",
+          "default": {},
+          "properties": {
+            "alt": {
+              "src": {
+                "type": "string",
+                "isObjectId": true,
+                "title": "Source",
+                "description": "",
+                "_backboneForms": {
+                  "type": "Asset",
+                  "media": "image"
+                }
+              }
+            }
+          }
+        },
+        "_items": {
+          "type": "array",
+          "title": "Items",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Item title",
+                "default": "",
+                "_adapt": {
+                  "translatable": true
+                }
+              },
+              "_choices": {
+                "type": "array",
+                "title": "Choices",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "string",
+                      "title": "Choice value",
+                      "default": "",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "text": {
+                      "type": "string",
+                      "title": "Choice text",
+                      "default": "",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "description": {
+                      "type": "string",
+                      "title": "Choice description",
+                      "default": "",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    }
+                  }
+                }
+              },
+              "_classes": {
+                "type": "string",
+                "title": "Custom classes",
+                "description": "Custom classes that are applied to the item",
+                "default": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
