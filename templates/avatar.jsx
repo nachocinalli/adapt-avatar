@@ -24,8 +24,15 @@ export default function Avatar(props) {
       setDescription(Array(_items.length).fill(''));
     }
     const _state = _items.map((item) => item._selected);
+    const _description = _items.map((item, index) => {
+      if (item._selected === '') {
+        return '';
+      }
+      return item._choices[Number(item._selected) - 1].description;
+    });
+
     setState(_state);
-    //
+    setDescription(_description);
   }, [_items]);
 
   return (
@@ -57,7 +64,7 @@ export default function Avatar(props) {
                       checked={state[_index] === choice.value}
                     />
                     <label htmlFor={`input-${_index}-${_i}`}>
-                        {html(compile(choice.text))}
+                      {html(compile(choice.text))}
                     </label>
                   </div>
                 ))}
