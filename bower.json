@@ -1,11 +1,11 @@
 {
   "name": "adapt-avatar",
-  "version": "1.0.0",
-  "framework": ">=5.14.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nachocinalli/adapt-avatar.git"
+    "url": "https://github.com/nachocinalli/adapt-avatar.git"
   },
+  "framework": ">=5.14.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/nachocinalli/adapt-avatar",
   "bugs": "https://github.com/nachocinalli/adapt-avatar/issues",
   "component": "avatar",
