@@ -28,7 +28,7 @@ export default function Avatar(props) {
       if (item._selected === '') {
         return '';
       }
-      return item._choices[Number(item._selected) - 1].description;
+      return item._choices[Number(item._selected) - 1]?.description;
     });
 
     setState(_state);
