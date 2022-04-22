@@ -23,7 +23,7 @@ export default class AvatarModel extends ComponentModel {
     const itemsStateComplete = this.get('_items').every(
       (item) => item._selected !== ''
     );
-    console.log('itemsStateComplete', itemsStateComplete);
+   // console.log('itemsStateComplete', itemsStateComplete);
     if (!itemsStateComplete) return;
     this.setCompletionStatus();
   }
