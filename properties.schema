@@ -30,30 +30,7 @@
 			"help": "This is the instruction text",
 			"translatable": true
 		},
-		"_splitCSSclasses": {
-			"type": "boolean",
-			"required": false,
-			"title": "Split CSS classes?",
-			"inputType": "Checkbox",
-			"validators": [],
-			"help": "",
-			"translatable": false
-		},
-		"_graphic": {
-			"type": "object",
-			"required": false,
-			"title": "Graphic",
-			"properties": {
-				"src": {
-					"type": "string",
-					"required": false,
-					"default": "",
-					"inputType": "Asset:image",
-					"validators": [],
-					"help": ""
-				}
-			}
-		},
+
 		"_items": {
 			"type": "array",
 			"required": true,
@@ -72,44 +49,99 @@
 						"help": "This is the item text",
 						"translatable": true
 					},
-					"_choices": {
+					"ariaLabel": {
+						"type": "string",
+						"required": false,
+						"inputType": "Text",
+						"title": "Item aria label",
+						"default": "",
+						"validators": [],
+						"help": "This is the aria label",
+						"translatable": true
+					},
+					"description": {
+						"type": "string",
+						"required": false,
+						"inputType": "TextArea",
+						"title": "Item description",
+						"default": "",
+						"validators": [],
+						"help": "This is the description",
+						"translatable": true
+					},
+					"_pose": {
 						"type": "array",
 						"required": true,
-						"title": "Choices",
+						"title": "Pose",
 						"items": {
 							"type": "object",
 							"required": true,
 							"properties": {
-								"value": {
+								"title": {
 									"type": "string",
 									"required": false,
 									"inputType": "Text",
-									"title": "Choice value",
+									"title": "Item pose title",
 									"default": "",
 									"validators": [],
-									"help": "This is the choice value",
+									"help": "This is the pose title",
 									"translatable": true
 								},
-								"text": {
+								"ariaLabel": {
 									"type": "string",
 									"required": false,
 									"inputType": "Text",
-									"title": "Choice text",
+									"title": "Item pose aria label",
 									"default": "",
 									"validators": [],
-									"help": "This is the choice text",
+									"help": "This is the pose aria label",
 									"translatable": true
 								},
-								"description": {
+								"name": {
 									"type": "string",
 									"required": false,
-									"inputType": "TextArea",
-									"title": "Choice description",
+									"inputType": "Text",
+									"title": "Item pose name",
 									"default": "",
 									"validators": [],
-									"help": "This is the choice description",
-									"translatable": true
+									"help": "This is the item pose name. This is used to identify the pose in the pose list. E.g. pose-1, pose-2, is-correct, is-partially-correct, is-incorrect.",
+									"translatable": false
+								},
+								"_graphic": {
+									"type": "object",
+									"required": false,
+									"title": "Graphic",
+									"properties": {
+										"src": {
+											"type": "string",
+											"required": false,
+											"default": "",
+											"inputType": "Asset:image",
+											"validators": [],
+											"help": ""
+										},
+										"alt": {
+											"type": "string",
+											"required": false,
+											"default": "",
+											"title": "Alternative text",
+											"inputType": "Text",
+											"validators": [],
+											"help": "A description of the image",
+											"translatable": true
+										}
+									}
+								},
+								"_isHidden": {
+									"type": "boolean",
+									"required": false,
+									"default": false,
+									"title": "Is hidden",
+									"inputType": "Checkbox",
+									"validators": [],
+									"help": "This is used to hide the pose in the pose list."
 								}
+
 							}
 						}
 					},

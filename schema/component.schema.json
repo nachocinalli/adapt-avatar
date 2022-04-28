@@ -25,30 +25,7 @@
             "translatable": true
           }
         },
-        "_splitCSSclasses": {
-          "type": "boolean",
-          "title": "Split CSS classes?",
-          "description": ""
-        },
-        "_graphic": {
-          "type": "object",
-          "title": "Graphic",
-          "default": {},
-          "properties": {
-            "alt": {
-              "src": {
-                "type": "string",
-                "isObjectId": true,
-                "title": "Source",
-                "description": "",
-                "_backboneForms": {
-                  "type": "Asset",
-                  "media": "image"
-                }
-              }
-            }
-          }
-        },
+
         "_items": {
           "type": "array",
           "title": "Items",
@@ -63,35 +40,75 @@
                   "translatable": true
                 }
               },
-              "_choices": {
+              "ariaLabel": {
+                "type": "string",
+                "title": "Item aria label",
+                "default": "",
+                "_adapt": {
+                  "translatable": true
+                }
+              },
+              "description": {
+                "type": "string",
+                "title": "Item description",
+                "default": "",
+                "_adapt": {
+                  "translatable": true
+                }
+              },
+              "_pose": {
                 "type": "array",
-                "title": "Choices",
+                "title": "Pose",
                 "items": {
                   "type": "object",
                   "properties": {
-                    "value": {
+                    "title": {
                       "type": "string",
-                      "title": "Choice value",
+                      "title": "Item pose title",
                       "default": "",
                       "_adapt": {
                         "translatable": true
                       }
                     },
-                    "text": {
+                    "ariaLabel": {
                       "type": "string",
-                      "title": "Choice text",
+                      "title": "Item pose aria label",
                       "default": "",
                       "_adapt": {
                         "translatable": true
                       }
                     },
-                    "description": {
+                    "name": {
                       "type": "string",
-                      "title": "Choice description",
+                      "title": "Item pose name",
                       "default": "",
                       "_adapt": {
-                        "translatable": true
+                        "translatable": false
                       }
+                    },
+                    "_graphic": {
+                      "type": "object",
+                      "title": "Graphic",
+                      "default": {},
+                      "properties": {
+                        "alt": {
+                          "src": {
+                            "type": "string",
+                            "isObjectId": true,
+                            "title": "Source",
+                            "description": "",
+                            "_backboneForms": {
+                              "type": "Asset",
+                              "media": "image"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "_isHidden": {
+                      "type": "boolean",
+                      "title": "Is hidden",
+                      "default": false
                     }
                   }
                 }

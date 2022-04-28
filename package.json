@@ -1,12 +1,12 @@
 {
   "name": "adapt-avatar",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "framework": ">=5.14.0",
   "homepage": "https://github.com/nachocinalli/adapt-avatar",
   "bugs": "https://github.com/nachocinalli/adapt-avatar/issues",
-  "component" : "avatar",
+  "component": "avatar",
   "targetAttribute": "_avatar",
-  "displayName" : "Avatar",
+  "displayName": "Avatar",
   "description": "A simple avatar component",
   "main": "/js/adapt-avatar.js",
   "keywords": [

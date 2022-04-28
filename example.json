@@ -9,41 +9,175 @@
   "displayTitle": "Avatar component",
   "body": "This component you're reading is an avatar component.",
   "instruction": "",
-  "_graphic": {
-    "alt": "",
-    "src": "assets/avatar-spritesheet.png"
-  },
-  "_splitCSSclasses": false,
   "_items": [
     {
-      "title": "Customize the avatar feature 1",
-      "_classes": "",
-      "_choices": [
+      "title": "Avatar 1",
+      "ariaLabel": "Avatar 1",
+      "_description": "Atavar 1, this is the description text.",
+      "_pose": [
         {
-          "value": "1",
-          "text": "Aspect 1",
-          "description": "1. Aspect 1 description"
+          "title": "Pose 1",
+          "ariaLabel": "Pose 1",
+          "name": "pose-left",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-10.png"
+          },
+          "_isHidden": false
         },
         {
-          "value": "2",
-          "text": "Aspect 2",
-          "description": "1. Aspect 2 description"
+          "title": "Pose 2",
+          "ariaLabel": "Pose 2",
+          "name": "pose-right",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-11.png"
+          },
+          "_isHidden": true
+        },
+        {
+          "title": "",
+          "ariaLabel": "",
+          "name": "is-correct",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-1-is-correct.png"
+          },
+          "_isHidden": true
+        },
+        {
+          "title": "",
+          "ariaLabel": "",
+          "name": "is-incorrect",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-1-is-incorrect.png"
+          },
+          "_isHidden": true
+        },
+        {
+          "title": "",
+          "ariaLabel": "",
+          "name": "is-partially-correct",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-1-is-partially-correct.png"
+          },
+          "_isHidden": true
         }
       ]
     },
     {
-      "title": "Customize the avatar feature 2",
-      "_classes": "",
-      "_choices": [
+      "title": "Avatar 2",
+      "ariaLabel": "Avatar 2",
+      "_description": "Atavar 2, this is the description text.",
+      "_pose": [
         {
-          "value": "1",
-          "text": "Aspect 1",
-          "description": "2. Aspect 1 description"
+          "title": "Pose 1",
+          "ariaLabel": "Pose 1",
+          "name": "pose-left",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-20.png"
+          },
+          "_isHidden": false
         },
         {
-          "value": "2",
-          "text": "Aspect 2",
-          "description": "2. Aspect 2 description"
+          "title": "Pose 2",
+          "ariaLabel": "Pose 2",
+          "name": "pose-right",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-21.png"
+          },
+          "_isHidden": true
+        },
+        {
+          "title": "",
+          "ariaLabel": "",
+          "name": "is-correct",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-2-is-correct.png"
+          },
+          "_isHidden": true
+        },
+        {
+          "title": "",
+          "ariaLabel": "",
+          "name": "is-incorrect",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-2-is-incorrect.png"
+          },
+          "_isHidden": true
+        },
+        {
+          "title": "",
+          "ariaLabel": "",
+          "name": "is-partially-correct",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-2-is-partially-correct.png"
+          },
+          "_isHidden": true
+        }
+      ]
+    },
+    {
+      "title": "Avatar 3",
+      "ariaLabel": "Avatar 3",
+      "_description": "Atavar 3, this is the description text.",
+      "_pose": [
+        {
+          "title": "Pose 1",
+          "ariaLabel": "Pose 1",
+          "name": "pose-left",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-30.png"
+          },
+          "_isHidden": false
+        },
+        {
+          "title": "Pose 2",
+          "ariaLabel": "Pose 2",
+          "name": "pose-right",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-31.png"
+          },
+          "_isHidden": true
+        },
+        {
+          "title": "",
+          "ariaLabel": "",
+          "name": "is-correct",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-3-is-correct.png"
+          },
+          "_isHidden": true
+        },
+        {
+          "title": "",
+          "ariaLabel": "",
+          "name": "is-incorrect",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-3-is-incorrect.png"
+          },
+          "_isHidden": true
+        },
+        {
+          "title": "",
+          "ariaLabel": "",
+          "name": "is-partially-correct",
+          "_graphic": {
+            "alt": "",
+            "src": "course/en/images/av-3-is-partially-correct.png"
+          },
+          "_isHidden": true
         }
       ]
     }
