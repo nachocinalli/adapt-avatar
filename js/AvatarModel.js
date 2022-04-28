@@ -91,11 +91,11 @@ export default class AvatarModel extends ComponentModel {
   saveAvatar() {
     const avatarSelected = this.getSelectedItem();
     const avatarState = avatarSelected._index + '|' + avatarSelected._poseIndex;
-
+    const avatarStateClass = avatarSelected._index + '' + avatarSelected._poseIndex;
     offlineStorage.set('av', avatarState);
     const htmlContainer = document.querySelector('html');
     this.removeClassesByPrefix(htmlContainer, 'av-');
-    htmlContainer.classList.add(`av-${avatarState}`);
+    htmlContainer.classList.add(`av-${avatarStateClass}`);
 
   }
 
