@@ -47,7 +47,7 @@ export default function Avatar(props) {
                     attributionClassNamePrefixes={['component', 'avatar']}/>
                   }
                   <div className="avatar__item-title">{html(compile(title))}</div>
-                  {_selected && <div className="avatar__item icon icon-tick"></div>}
+                  {_selected && <div className="avatar__item-icon icon icon-tick"></div>}
                 </button>
 
               </div>
@@ -75,7 +75,7 @@ export default function Avatar(props) {
                       />
 
                       <div className="avatar__item-pose-text">{html(compile(title))}</div>
-                      {_selected && <div className="avatar__item-pose icon icon-tick"></div>}
+                      {_selected && <div className="avatar__item-pose-icon icon icon-tick"></div>}
                     </button>
                   </div>
                 ))}
