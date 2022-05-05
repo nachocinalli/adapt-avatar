@@ -6,8 +6,10 @@ class AvatarView extends ComponentView {
   }
 
   postRender() {
-    this.setReadyStatus();
-    this.model.checkCompletionStatus();
+    this.$('.avatar__item__image-container').imageready(() => {
+      this.setReadyStatus();
+      this.model.checkCompletionStatus();
+    });
   }
 
   onSelectItem(item) {
