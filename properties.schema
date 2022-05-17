@@ -30,7 +30,15 @@
 			"help": "This is the instruction text",
 			"translatable": true
 		},
-
+		"_initialSelectedItem": {
+			"type": "number",
+			"required": true,
+			"default": -1,
+			"title": "Select initial item",
+			"inputType": "Number",
+			"validators": ["required", "number"],
+			"help": "Set the initial selected item. -1 means no item is selected. Set to 0 to select the first item."
+		},
 		"_items": {
 			"type": "array",
 			"required": true,

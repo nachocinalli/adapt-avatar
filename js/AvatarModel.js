@@ -18,7 +18,7 @@ export default class AvatarModel extends ComponentModel {
     const avatarState = av.split('|').map(Number);
 
     if (avatarState.length > 0) {
-      const itemIndex = avatarState[0] || 0;
+      const itemIndex = avatarState[0] || this.get('_initialSelectedItem');
       const poseIndex = avatarState[1] || 0;
       const item = this.get('_items')[itemIndex];
       item._selected = true;
@@ -29,9 +29,10 @@ export default class AvatarModel extends ComponentModel {
 
   setUpItems() {
     const items = this.get('_items') || [];
+    const _initialSelectedItem = this.get('_initialSelectedItem');
     items.forEach((item, index) => {
       item._index = index;
-      item._selected = item._index === 0;
+      item._selected = item._index === _initialSelectedItem;
       item._poseIndex = 0;
       item._pose.forEach((pose, index) => {
         pose._index = index;

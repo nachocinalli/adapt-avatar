@@ -9,6 +9,7 @@
   "displayTitle": "Avatar component",
   "body": "This component you're reading is an avatar component.",
   "instruction": "",
+  "_initialSelectedItem": -1,
   "_items": [
     {
       "title": "Avatar 1",
