@@ -18,7 +18,7 @@ export default class AvatarModel extends ComponentModel {
     const avatarState = av.split('|').map(Number);
 
     if (avatarState.length > 0) {
-      const itemIndex = avatarState[0] || this.get('_initialSelectedItem');
+      const itemIndex = avatarState[0] || (this.get('_initialSelectedItem') >= 0 ? this.get('_initialSelectedItem') : 0);
       const poseIndex = avatarState[1] || 0;
       const item = this.get('_items')[itemIndex];
       item._selected = true;
