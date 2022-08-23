@@ -1,7 +1,7 @@
 {
   "name": "adapt-avatar",
-  "version": "2.2.0",
-  "framework": ">=5.14.0",
+  "version": "2.3.0",
+  "framework": ">=5.19.1",
   "homepage": "https://github.com/nachocinalli/adapt-avatar",
   "bugs": "https://github.com/nachocinalli/adapt-avatar/issues",
   "component": "avatar",
