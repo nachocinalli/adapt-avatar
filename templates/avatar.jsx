@@ -7,6 +7,7 @@ export default function Avatar(props) {
   const [_hasPose, setHasPose] = useState(false);
   const handleSelectItem = (itemIndex) => {
     const item = _items.find(item => item._index === itemIndex);
+    setItemSelected(null);
     onSelectItem(item);
   };
   const handleSelectItemPose = (index, itemIndex) => {
