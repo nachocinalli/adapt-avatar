@@ -1,8 +1,8 @@
-import Adapt from 'core/js/adapt';
+import components from 'core/js/components';
 import AvatarView from './AvatarView';
 import AvatarModel from './AvatarModel';
 
-export default Adapt.register('avatar', {
+export default components.register('avatar', {
   model: AvatarModel,
   view: AvatarView
 });
