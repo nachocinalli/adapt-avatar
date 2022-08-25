@@ -41,7 +41,7 @@ export default function Avatar(props) {
               data-index={_index}
             >
               <div className="avatar__item-inner">
-                <button aria-label={ariaLabel} onClick={() => handleSelectItem(_index)} disabled={_itemSelected?._index === _index} className={_itemSelected?._index === _index ? 'is-disabled' : ''}>
+                <button aria-label={ariaLabel} onClick={() => handleSelectItem(_index)} disabled={_selected} className={_selected ? 'is-disabled' : ''}>
                   {_pose && _pose.length > 0 &&
                   <templates.image {..._pose[0]._graphic}
                     classNamePrefixes={['avatar__item']}
@@ -69,7 +69,7 @@ export default function Avatar(props) {
                 {_itemSelected._pose.map(({ title, ariaLabel, _graphic, _selected, _isHidden, _index, _itemIndex }) => (
                   <div className={classes(['avatar__item-pose', _selected && 'is-selected', _isHidden && 'is-hidden'])} key={_index}>
 
-                    <button aria-label={ariaLabel} onClick={() => handleSelectItemPose(_index, _itemIndex)}>
+                    <button aria-label={ariaLabel} onClick={() => handleSelectItemPose(_index, _itemIndex)} disabled={_selected} className={_selected ? 'is-disabled' : ''}>
                       <templates.image {..._graphic}
                         classNamePrefixes={['avatar__item-pose']}
                         attributionClassNamePrefixes={['component', 'avatar']}
