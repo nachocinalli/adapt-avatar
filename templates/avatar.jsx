@@ -41,7 +41,7 @@ export default function Avatar(props) {
               data-index={_index}
             >
               <div className="avatar__item-inner">
-                <button aria-label={ariaLabel} onClick={() => handleSelectItem(_index)}>
+                <button aria-label={ariaLabel} onClick={() => handleSelectItem(_index)} disabled={_itemSelected?._index === _index} className={_itemSelected?._index === _index ? 'is-disabled' : ''}>
                   {_pose && _pose.length > 0 &&
                   <templates.image {..._pose[0]._graphic}
                     classNamePrefixes={['avatar__item']}
