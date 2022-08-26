@@ -9,7 +9,7 @@ The attributes listed below are used in components.json and are properly formatt
 No known limitations.
 
 ----------------------------
-**Version number:**  2.3.0  
+**Version number:**  2.4.0  
 **Framework versions:** 5.19.1+  
 **Author / maintainer:** [Ignacio Cinalli] (https://github.com/nachocinalli)  
 **Accessibility support:** 
